@@ -1,14 +1,6 @@
-import 'package:bycarr/widgets/footer/aboutus_page.dart';
-import 'package:bycarr/widgets/footer/disclaimer_page.dart';
-import 'package:bycarr/widgets/footer/help_supprt.dart';
-import 'package:bycarr/widgets/footer/privacy_policy.dart';
-import 'package:bycarr/widgets/footer/returncancellation_page.dart';
-import 'package:bycarr/widgets/footer/shippingdelivery_page.dart';
-import 'package:bycarr/widgets/footer/terms_conditionpage.dart';
 import 'package:flutter/material.dart';
 import '../screens/signin_screen.dart';
-import 'footer/contact_emailpage.dart';
-import 'footer/customer_care_page.dart';
+import 'footer/export_footerwidgets.dart';
 
 class FooterSection extends StatelessWidget {
   const FooterSection({super.key});

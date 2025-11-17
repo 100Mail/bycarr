@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../export_widgets.dart';
 
 class AboutUsPage extends StatelessWidget {
+  static const String routeName = '/aboutus_screen';
   const AboutUsPage({super.key});
 
   @override
@@ -11,10 +12,9 @@ class AboutUsPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const NavBar(), 
-            const CategorySection(), 
+            const NavBar(),
+            const CategorySection(),
 
-            // Page-specific content
             Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
@@ -22,10 +22,7 @@ class AboutUsPage extends StatelessWidget {
                 children: const [
                   Text(
                     'Delivery and Shipping Policy',
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold
-                    ),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 10),
                   Text(
@@ -54,7 +51,7 @@ class AboutUsPage extends StatelessWidget {
               ),
             ),
 
-            const NearbyCitiesAndFooter(), 
+            const FooterSection(),
           ],
         ),
       ),

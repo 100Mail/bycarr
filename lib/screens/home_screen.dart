@@ -1,4 +1,3 @@
-
 import 'package:bycarr/widgets/export_widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -16,13 +15,14 @@ class HomeScreen extends StatelessWidget {
           children: [
             const NavBar(),
             const CategorySection(),
-            HeroSection(), 
+            HeroSection(),
             const FeaturedSection(),
             const EmptyState(),
             const LatestSalesSection(),
             const PopularBrands(),
             const ExploreMore(),
-            const NearbyCitiesAndFooter(),
+            const NearbyCities(),
+            const FooterSection(),
           ],
         ),
       ),

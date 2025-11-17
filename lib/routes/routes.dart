@@ -1,10 +1,7 @@
-import 'package:bycarr/screens/forgetpassword_screen.dart';
-import 'package:bycarr/screens/register_partnerscreen.dart';
-import 'package:bycarr/screens/register_screen.dart';
-import 'package:bycarr/screens/signin_screen.dart';
-import 'package:bycarr/screens/splash_screen.dart';
+
+import 'package:bycarr/screens/export_screens.dart';
 import 'package:go_router/go_router.dart';
-import '../screens/home_screen.dart';
+import '../widgets/footer/export_footerwidgets.dart';
 
 class AppRoutes {
   static final goRouter = GoRouter(
@@ -33,6 +30,50 @@ class AppRoutes {
       GoRoute(
         path: RegisterPartnerscreen.routeName,
         builder: (context, state) => const RegisterPartnerscreen(),
+      ),
+      GoRoute(
+        path: ShippingDeliveryPage.routeName,
+        builder: (context, state) => const ShippingDeliveryPage(),
+      ),
+      GoRoute(
+        path: AboutUsPage.routeName,
+        builder: (context, state) => const AboutUsPage(),
+      ),
+       GoRoute(
+        path: ContactEmailPage.routeName,
+        builder: (context, state) => const ContactEmailPage(),
+      ),
+       GoRoute(
+        path: DisclaimerPage.routeName,
+        builder: (context, state) => const DisclaimerPage(),
+      ),
+       GoRoute(
+        path: HelpSupportPage.routeName,
+        builder: (context, state) => const HelpSupportPage(),
+      ),
+       GoRoute(
+        path: PrivacyPolicyPage.routeName,
+        builder: (context, state) => const PrivacyPolicyPage(),
+      ),
+       GoRoute(
+        path: TermsConditionsPage.routeName,
+        builder: (context, state) => const TermsConditionsPage(),
+      ),
+       GoRoute(
+        path: ReturnCancellationPage.routeName,
+        builder: (context, state) => const ReturnCancellationPage(),
+      ),
+       GoRoute(
+        path: CustomerCarePage.routeName,
+        builder: (context, state) => const CustomerCarePage(),
+      ),
+      GoRoute(
+        path: RetailerInquiryForm.routeName,
+        builder: (context, state) => const RetailerInquiryForm(),
+      ),
+      GoRoute(
+        path: PrivacyReusableWidget.routeName,
+        builder: (context, state) => const PrivacyReusableWidget(),
       ),
     ],
   );

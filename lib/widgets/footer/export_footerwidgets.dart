@@ -1,0 +1,11 @@
+export './aboutus_page.dart';
+export './contact_emailpage.dart';
+export './customer_care_page.dart';
+export './disclaimer_page.dart';
+export './help_supprt.dart';
+export './privacy_policy.dart';
+export './returncancellation_page.dart';
+export './shippingdelivery_page.dart';
+export './terms_conditionpage.dart';
+export './retailer_enquiryform.dart';
+export './privacy_reusablewidget.dart';

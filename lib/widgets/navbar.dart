@@ -1,6 +1,7 @@
-import 'package:bycarr/screens/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+import '../screens/export_screens.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({super.key});
@@ -26,7 +27,15 @@ class NavBar extends StatelessWidget {
       child: SafeArea(
         child: Row(
           children: [
-            Image.asset('assets/images/bycarr_logo.png', height: logoHeight),
+            GestureDetector(
+              onTap: () {
+                context.push(HomeScreen.routeName);
+              },
+              child: Image.asset(
+                'assets/images/bycarr_logo.png',
+                height: logoHeight,
+              ),
+            ),
 
             SizedBox(width: screenWidth * 0.03),
 

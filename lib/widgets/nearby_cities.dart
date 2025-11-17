@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'footer.dart';
 
-class NearbyCitiesAndFooter extends StatelessWidget {
-  const NearbyCitiesAndFooter({super.key});
+class NearbyCities extends StatelessWidget {
+  const NearbyCities({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,6 @@ class NearbyCitiesAndFooter extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            /// --- Section Header ---
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -55,7 +53,6 @@ class NearbyCitiesAndFooter extends StatelessWidget {
             ),
             SizedBox(height: screenHeight * 0.02),
 
-            /// --- Cities Grid / Horizontal Scroll ---
             screenWidth < 600
                 ? SizedBox(
                     height: screenHeight * 0.18,
@@ -98,7 +95,6 @@ class NearbyCitiesAndFooter extends StatelessWidget {
 
             SizedBox(height: screenHeight * 0.05),
 
-            /// --- Features Section ---
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -145,9 +141,6 @@ class NearbyCitiesAndFooter extends StatelessWidget {
             ),
 
             SizedBox(height: screenHeight * 0.07),
-
-            /// --- Footer Section ---
-            const FooterSection(),
           ],
         ),
       ),
@@ -253,7 +246,6 @@ class FeatureCard extends StatelessWidget {
   }
 }
 
-/// --- Sample Data ---
 final List<Map<String, String>> cities = [
   {'name': 'Biratnagar', 'image': 'https://picsum.photos/400?1'},
   {'name': 'Chitwan', 'image': 'https://picsum.photos/400?2'},

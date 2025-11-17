@@ -37,7 +37,6 @@ class _RegisterPartnerscreenState extends State<RegisterPartnerscreen> {
   LatLng _initialLatLng = const LatLng(27.7172, 85.3240); // Kathmandu default
   double _mapZoom = 13;
 
-  // Images/documents (image picker)
   final List<XFile> _pickedImages = [];
   final ImagePicker _picker = ImagePicker();
 
