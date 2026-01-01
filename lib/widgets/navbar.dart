@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import '../screens/export_screens.dart';
 
 class NavBar extends StatelessWidget {
@@ -17,7 +16,6 @@ class NavBar extends StatelessWidget {
       horizontal: screenWidth * 0.035,
       vertical: screenHeight * 0.006,
     );
-
     return Container(
       color: const Color(0xFF6D0019),
       padding: EdgeInsets.symmetric(
