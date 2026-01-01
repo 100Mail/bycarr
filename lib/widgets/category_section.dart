@@ -30,7 +30,7 @@ class CategorySection extends StatelessWidget {
             ),
             _CategoryItem(
               icon: Icons.directions_car,
-              label: 'Hatchbacks',
+              label: 'Hatchback',
               screenWidth: screenWidth,
               screenHeight: screenHeight,
             ),
